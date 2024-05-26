@@ -89,3 +89,65 @@ This way, using companies that follow Niti protocol to create these stablecoins,
 #### 2.3.4 Niti's Blue Ocean Strategy
 
 According to KIM and MALBORGNE (2008), strategies such as Blue Ocean seek to create uncontested market spaces, as oposing to competition in an existing space. Focuses on making the competition irrelevant, and doesn't necessarilly care about beating it, because the company that uses the Blue Ocean Strategy compete for different customers, in a wider market, with different value proposals of what is offered on the market. The tools used on this research consists on the Matrix of Value Evaluation, which serves as a basis for diagnosing the company as a model for developing a new strategy; the Model of the four actions, used to question the business model used by competitors and propose changes on the company value curve; and the Matrix of eliminating-reduce-elevate-create, a complementar model to the four actions model and comunicate the needed actions to achieve the new value curve proposed by the strategy.
+
+#### 4 Use cases
+
+#### 4.1 Sinthetic Real
+
+Using Discreet Log Contracts (DLCs), Niti allows the creation of stablecoins which replicate the value of fiat currencies as Brazilian Real. This application is particulally usefull in markets where the volatility or devaluation of the local currency makes the stability offered by a cryptocurrency pegged to the value of more stable currencies attractive.
+
+#### 4.2 Descentralized DCA
+
+Dollar Cost Averaging Strategy (DCA) is facilitated by the use of DLC's interlinked on Niti's protocol, allowing automatic and periodic purchases of Bitcoin and other cryptocurrencies. This system sets up a new DLC periodically, where the price of the asset is determined by the result of the last DLC.
+
+#### 4.3 Synthetic Stocks
+
+Niti also allows the creation of synthetic stocks which emulates the development of a stock or indexes from the stock market. These synthetics are created and managed through DLC's, allowing users an exposition to different financial markets without the need of directly convert your cryptocurrencies to fiat currencies or invest directly on external markets.
+
+#### 4.4 Passive income in Bitcoin
+
+Through the use of multiple assets as collateral, Niti allows not only the creation of synthetic assets, but also the renting of those assets to other users. This creates a opportunity of passive income to Bitcoin owners that wish to monetize its assets without selling them, renting them as collateral on DLC contracts.
+
+#### 4.5 P2P bettings
+
+Niti's protocol uses Discreet Contract Logs (DLCs) to organize peer-to-peer bets on a variety of events, such as sportive, political or other noticeable events. This allows users to bet directly with each other, without the need of betting houses or other intermediaries. By using oracles to confirm the result of events, the protocol ensures that the bets are solved fairly and transparently. For example, on a sport bet, users can bet on some result on a soccer match; on a political bet, the focus can be the result of elections. Each bet is ensured by smart contracts that only release the payment when the result is officially confirmed by the oracle.
+
+#### 4.7 Simplified Hedge
+
+A Farmer faces various variable costs on its operations, such as fuel, fertilizers, seeds, animal food and others. These inputs have publicly negotiates prices on commodities markets.
+
+Through Niti, the farmer can buy a set of synthetic assets that follow the price of these inputs on a specific proportion. For example:
+
+- 30% Diesel Synthetic
+- 25% Soy Synthetic
+- 20% Nitrogen Fertilizer Synthetic
+- 15% Corn Synthetic
+- 10% Fosfate Synthetic
+
+This set of synthetics would form a simplified hedge against the main source of variable costs of the farm. As the prices of those inputs fluctuate, the value of the corresponding synthetic assets also fluctuate, providing a natural hedge.
+
+The farmer don't need to negotiate directly these assets on the traditional markets of commodities. Through Niti DLC's, he can obtain facilitated exposure to a personalized basket of those assets, backed by bitcoin.
+
+Furthermore, as the synthetic assets are negotiates on a descentralized peer-to-peer way, the farmer can keep total custody of its funds during all process, without needing to exchange it with a centralized counterpart.
+
+This kind of simplified hedge without custody would be very hard or expensive of obtain on the traditional market to a small rural producer. However, Niti allows even farmers to build personalized protection strategies against price fluctuations in a practical and economical way.
+
+The capability of creating synthetic assets backed by pratically any asset with public price that makes Niti a powerfull solution to manage the risk on various sectors, not only the financial. Producers, companies and even natural persons can assemble their own baskets of hedge, according with its specific needs.
+
+#### 5 References
+
+    1. Dryja, T. (2018). Discreet Log Contracts. Whitepaper. Available in: https://adiabat.github.io/dlc.pdf
+    
+    2. Schramm, A. Bitcoin, the system of final settlement. Article. Available in: https://livecoins.com.br/bitcoin-sistema-de-liquidacao-final/
+    
+    3. Bhatia, N. Layered Money. Book.
+    
+    4 .Hayek, F. A. (1976). The Denationalization of Money. Book.
+    
+    5. Aristophanes. The complete plays. Specific reference about the using of currencies on the Ancient Greek.
+    
+    6. Kim, W. C., & Mauborgne, R. (2005). Blue Ocean Strategy. Harvard Business Review Press.
+    
+    7. Credit Suisse. Lombard Loans. Available in: https://www.credit-suisse.com/ch/en/private-clients/investments/lombard-loan.html
+    
+    8. Investopedia. Gresham's Law. Available in: https://www.investopedia.com/terms/g/greshams-law.asp
