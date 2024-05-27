@@ -90,6 +90,47 @@ This way, using companies that follow Niti protocol to create these stablecoins,
 
 According to KIM and MALBORGNE (2008), strategies such as Blue Ocean seek to create uncontested market spaces, as oposing to competition in an existing space. Focuses on making the competition irrelevant, and doesn't necessarilly care about beating it, because the company that uses the Blue Ocean Strategy compete for different customers, in a wider market, with different value proposals of what is offered on the market. The tools used on this research consists on the Matrix of Value Evaluation, which serves as a basis for diagnosing the company as a model for developing a new strategy; the Model of the four actions, used to question the business model used by competitors and propose changes on the company value curve; and the Matrix of eliminating-reduce-elevate-create, a complementar model to the four actions model and comunicate the needed actions to achieve the new value curve proposed by the strategy.
 
+### 3. Model
+
+#### 3.1 Discreet Log Contracts
+
+Discreet Log Contracts (DLCS) are a kinda smart contract on Bitcoin that allows two parties to make bets or agreements privately, using real-world data to determine the outcome. It operates similarly to the Lightning Network but with conditional payment channels instead of off-chain micropayment channels.
+
+![DLC Model](/pt-br/assets/modeloDLC.png)
+*Interdax, “Discreet Log Contracts: Scalable Smart Contracts for Bitcoin”*
+
+
+DLCs use a model similar to the Lightning Network. Instead of being used for generic payments through a payment channel, they use a channel for conditional payments depending on external data to be executed.
+
+#### 3.2 How NITI uses DLCs to implement Hayek's monetary system
+
+NITI is not Alice, non-Bob, nor the Oracle. NITI acts as a coordinator between these parts, providing a technology infrastructure so Alice and Bob can meet and choose an oracle with a high reputation. It involves overcoming challenges cited in the Discreet Log Contracts Whitepaper: “Decentralized Matching“ or Decentralized Pairing.
+
+<!-- TODO: Write section 3.2.1 -->
+#### 3.2.1
+
+#### 3.2.3 Use of Multiple Collateral for DLCs
+
+DLCs commonly use only a digital asset as collateral, especially bitcoin. However, NITI employs Lombard Loans, which allows for utilizing a diversified basket of Bitcoin-backed synthetic assets as collateral.
+
+This approach brings significant advantages, as Bitcoin is an extremely volatile asset. By diversifying collateral with other uncorrelated synthetic assets, such as gold, the dollar, stocks, etc., the overall volatility of the collateral basket is reduced, mitigating the risk of margin calls.
+
+#### 3.2.3.1 Lombard Credit
+
+Lombard Loans, or Lombard Credits, is a traditional modality of loans where liquid assets are used as guarantees or collateral. Traditionally, it is offered by private banks to clients of hight income, Lombard Loans allows that borrowers to acess liquidity without having to sell their assets.
+
+<!-- Maybe don't be TITLES (Line 122) -->
+On the traditional market, a Lombard Loan works as follows: the client uses its assets (stocks, titles, funds) as collateral to the borrow. So, the bank lends an amount in money based on percent of the value of these assets in guarantees. The client pays fees periodically on borrowed value. If the value of the assets pledged as collateral falls below a pre-determined threshold about the loan amount, a margin call occurs. In this scenario, the client must deposit additional assets as collateral to replenish the required margin of guarantees by the bank. Failure to restore this margin will prompt the bank to execute or liquidate the initially provided collateral assets to repay the loan.
+
+Within Niti's platform, Lombard Loans are used to create synthetic assets backed by multiple assets. For example, Alice could use a combination of:
+  - 1/3 of a Gold Synthetic
+  - 1/3 of a Dollar Synthetic
+  - 1/3 of Bitcoin
+
+Furthermore, the users can create collateral custom baskets that best suit their risk profile and expectations for a specific contract.
+
+In Value-at-Risk (VaR) analyses, it was possible to quantify the benefits of diversification in reducing risk when using multiple assets as collateral. Using only Bitcoin as collateral, using one day as a period, 99% confidence, and daily data from 2014, the amount at risk of being lost is 8.25%. With just the dollar as collateral, it is 1.81%, and with just gold, it is 2.14%. Now, using the three assets together, in the proportion of each 1/3, there is the lowest risk of all: just 1%. Although it seems counterintuitive, this occurs because the prices of these assets have a low correlation: they tend to rise and fall at different times. Empirically, it is mathematically proven that using multiple assets as collateral is eight times safer than using only Bitcoin.
+
 #### 4 Use cases
 
 #### 4.1 Sinthetic Real
