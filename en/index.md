@@ -104,10 +104,24 @@ DLCs use a model similar to the Lightning Network. Instead of being used for gen
 
 #### 3.2 How NITI uses DLCs to implement Hayek's monetary system
 
-NITI is not Alice, non-Bob, nor the Oracle. NITI acts as a coordinator between these parts, providing a technology infrastructure so Alice and Bob can meet and choose an oracle with a high reputation. It involves overcoming challenges cited in the Discreet Log Contracts Whitepaper: “Decentralized Matching“ or Decentralized Pairing.
+NITI is not Alice, neither is Bob, nor the Oracle. NITI acts as a coordinator between these parts, providing a technology infrastructure so Alice and Bob can meet and choose an oracle with a high reputation. It involves overcoming challenges cited in the Discreet Log Contracts Whitepaper: “Decentralized Matching“ or Decentralized Pairing.
 
 <!-- TODO: Write section 3.2.1 -->
-#### 3.2.1
+#### 3.2.1 Decentralized Pairing
+
+NITI uses decentralized communication protocols, such as Nostr, to facilitate the pairing between parties interested in creating a DLC contract (Alice and Bob) and the oracle that will provide the external data necessary for the execution of the contract.
+
+Nostr (Notes and Other Stuff Transmitted by Relays) is a open and decentralized protocol for online communication. It allows users to publish content, interact and exchange messages on a safe and private way, without needing centralized platforms. On Nostr, the users maintain full control over their identities and data, using public key cryptography.
+
+Through Nostr, Alice and Bob can publish their intentions of making a contract in encrypted form, specifying the desired terms (asset, expiration date, pricing ranges, etc). These assets stay visible to other users on Nostr, who can then express interest if they have compatible intent. Once Alice and Bob meet and verify that their interest are complementary, they can then proceed with the creation of the DLC contract itself.
+
+Besides, Niti also keep a list of trustable oracles on Nostr, oracles that publish periodically and permanently their data, having its reputation based on the precision and frequency that this data are transmitted. Alice and Bob can then choose between a set of those oracles to provide the external data needed to the execution of the DLC Contract. This choice is crucial, because the integrity and precision of the data provided by the oracle are fundamental to the smooth operation of the contract.
+
+All this pairing process happens on a descentralized way, without Alice and Bob needing to trust their info to intermediaries. Nostr acts only as a intermediator, alowing the parties to meet each other and choose an oracle eficiently and privately.
+
+Beyond facilitating the descentralized pairing between Alice, Bob and an oracle mutually trusted Oracle, the Nostr also allows Niti to interlink multiple Discreet Log Contracts in sequency or in cascade. This arquitecture allows the creation of complex financial instruments and automated in Bitcoin. The central ideal is that the verified result of a DLC can serve automatically as a trigger to another DLC preconfigured by the parties, thus creating a chain of conditionally interkinked contracts.
+
+<!-- TODO: Finish section 3.2.1 -->
 
 #### 3.2.3 Use of Multiple Collateral for DLCs
 
