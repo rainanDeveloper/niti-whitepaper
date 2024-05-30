@@ -90,6 +90,24 @@ This way, using companies that follow Niti protocol to create these stablecoins,
 
 According to KIM and MALBORGNE (2008), strategies such as Blue Ocean seek to create uncontested market spaces, as oposing to competition in an existing space. Focuses on making the competition irrelevant, and doesn't necessarilly care about beating it, because the company that uses the Blue Ocean Strategy compete for different customers, in a wider market, with different value proposals of what is offered on the market. The tools used on this research consists on the Matrix of Value Evaluation, which serves as a basis for diagnosing the company as a model for developing a new strategy; the Model of the four actions, used to question the business model used by competitors and propose changes on the company value curve; and the Matrix of eliminating-reduce-elevate-create, a complementar model to the four actions model and comunicate the needed actions to achieve the new value curve proposed by the strategy.
 
+#### 2.3.4 The current analysis
+
+#### Value Evaluation Matrix
+
+![Value Evaluation Matrix](./assets/matrix1.jpg)
+
+#### Model of the four actions
+
+According to the four questions strategic questions developed by Kim and Mauborgne (2008), it is essential to determine which sector attributes should be changed:
+
+**Which attributes considered indispensable by the sector should be eliminated?**
+
+Niti eliminates the individual separation of tokenization services, acting as a protocol and technological infrastructure that allows other actors to create and monetize their own synthetic assets. Unlike platforms like MakerDAO, which operate with proprietary systems, Niti will position itself as an open platform, allowing others to operate on top of it. Currently, all stablecoin providers develop their own smart contracts and restrict access to their platforms. Niti will eliminate this barrier, promoting total openness.
+
+**Which attributes should be reduced well below industry standards?**
+
+Niti plans to reduce significantly the Capital Expendure (CapEx) comparing to other algorithmic stablecoins, in addition to decrease the amount of digital assets needed to stablish the backing of stablecoins. The platform will use exclusivelly Bitcoin as backing, simplifying the process and reducing the operational costs.
+
 ### 3. Model
 
 #### 3.1 Discreet Log Contracts
