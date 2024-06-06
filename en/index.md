@@ -137,9 +137,25 @@ Besides, Niti also keep a list of trustable oracles on Nostr, oracles that publi
 
 All this pairing process happens on a descentralized way, without Alice and Bob needing to trust their info to intermediaries. Nostr acts only as a intermediator, alowing the parties to meet each other and choose an oracle eficiently and privately.
 
-Beyond facilitating the descentralized pairing between Alice, Bob and an oracle mutually trusted Oracle, the Nostr also allows Niti to interlink multiple Discreet Log Contracts in sequency or in cascade. This arquitecture allows the creation of complex financial instruments and automated in Bitcoin. The central ideal is that the verified result of a DLC can serve automatically as a trigger to another DLC preconfigured by the parties, thus creating a chain of conditionally interkinked contracts.
+Beyond facilitating the descentralized pairing between Alice, Bob and an oracle mutually trusted Oracle, the Nostr also allows Niti to interlink multiple Discreet Log Contracts in sequency or in cascade. This arquitecture allows the creation of complex financial instruments and automated in Bitcoin. The central ideal is that the verified result of a DLC can serve automatically as a trigger to another DLC preconfigured by the parties, thus creating a chain of conditionally interkinked contracts. Considering a practical example, let's suppose that Alice and Bob set up a initial DLC, where the result depends on the variation of the dollar price against Bitcoin (BTCUSD) in a given period. They set up in advance a set of potential transactions T = { T1, T2, ..., Tn } using Adaptor Signatures, where each transaction Ti corresponds to a possible interval of BTCUSD variation, encoded in the Ci condition. At the end of the specified period, the oracle signs the observed result, for instance, Ck = "BTCUSD ranged between 10% and 20%". Niti, acting as coordinator, publishes this message signed by the oracle on Nostr. Alice and Bob can then derive the private key corresponding to the winning transaction through the formula:
 
-<!-- TODO: Finish section 3.2.1 -->
+![Formula 1](./assets/form1.png)
+
+<small>
+where α and β are the private secrets of Alice and Bob, respectively, and H is a criptographic hash function. Assuming that Alice and Bob wish to activate a second DLC if the result Ck is observed, they set up a new set S = {S1, S2, ..., Sm} of potencial transactions to this second DLC, where each Sj representa a periodic Bitcoin purchase. The private keys of this transactions are derived by embedding the condition Ck of the first DLC:
+</small>
+
+![Formula 2](./assets/form2.png)
+
+<small>
+where G is a eliptic curve generator, α' and β' are the new secrets, and Dj encodes the details of the periodic purchase. When Niti publishes the signed message with the result od Ck on Nostr, Alice and Bob can now derive the private key of a specific transaction Sj and activate a second DLC.
+</small>
+
+![Formula 3](./assets/form3.png)
+
+<small>
+This process can be repeated, chaining multiple Discreet Log Contracts (DLCs) where the result of a contract published by Niti can be used as a pré-image condition to activate the next on the chain, all operating on a decentralized way through signed messages on Nostr. Niti doesn't intermediate the execution of individual DLCs, but facilitates the publishing of results published by the oracle, allowing Alice and Bob to activate new DLCs on the chain as needed. This combination of DLCs with Adaptor Signatures and Nostr paves the way to the construction of a descentralized network of programmable financial contracts directly on the Bitcoin base layer.
+</small>
 
 #### 3.2.3 Use of Multiple Collateral for DLCs
 
@@ -151,8 +167,7 @@ This approach brings significant advantages, as Bitcoin is an extremely volatile
 
 Lombard Loans, or Lombard Credits, is a traditional modality of loans where liquid assets are used as guarantees or collateral. Traditionally, it is offered by private banks to clients of hight income, Lombard Loans allows that borrowers to acess liquidity without having to sell their assets.
 
-<!-- Maybe don't be TITLES (Line 122) -->
-On the traditional market, a Lombard Loan works as follows: the client uses its assets (stocks, titles, funds) as collateral to the borrow. So, the bank lends an amount in money based on percent of the value of these assets in guarantees. The client pays fees periodically on borrowed value. If the value of the assets pledged as collateral falls below a pre-determined threshold about the loan amount, a margin call occurs. In this scenario, the client must deposit additional assets as collateral to replenish the required margin of guarantees by the bank. Failure to restore this margin will prompt the bank to execute or liquidate the initially provided collateral assets to repay the loan.
+On the traditional market, a Lombard Loan works as follows: the client uses its assets (stocks, securities, funds) as collateral to the borrow. So, the bank lends an amount in money based on percent of the value of these assets in guarantees. The client pays fees periodically on borrowed value. If the value of the assets pledged as collateral falls below a pre-determined threshold about the loan amount, a margin call occurs. In this scenario, the client must deposit additional assets as collateral to replenish the required margin of guarantees by the bank. Failure to restore this margin will prompt the bank to execute or liquidate the initially provided collateral assets to repay the loan.
 
 Within Niti's platform, Lombard Loans are used to create synthetic assets backed by multiple assets. For example, Alice could use a combination of:
   - 1/3 of a Gold Synthetic
