@@ -108,6 +108,10 @@ Niti eliminates the individual separation of tokenization services, acting as a 
 
 Niti plans to reduce significantly the Capital Expendure (CapEx) comparing to other algorithmic stablecoins, in addition to decrease the amount of digital assets needed to stablish the backing of stablecoins. The platform will use exclusivelly Bitcoin as backing, simplifying the process and reducing the operational costs.
 
+**Which attributes can be raised well above the industry standards?**
+
+The usage experience will be considerably improved, since the standardization will facilitate the choice between different currency issuers by the users. Niti aims to achieve a wide market of users, including sectors out of the traditional market scope, such as farmers and industrialists. Furthermore, the asset diversity will be significantly expanded. The focus won't be on competing directly with IOU stablecoins, but rather offer a wide range of synthetic assets with different price parities. The interconnection of DLC's also will allow for the creation of a greater variety of complex financial instruments, making new tools available to the market.
+
 ### 3. Model
 
 #### 3.1 Discreet Log Contracts
@@ -124,7 +128,6 @@ DLCs use a model similar to the Lightning Network. Instead of being used for gen
 
 NITI is not Alice, neither is Bob, nor the Oracle. NITI acts as a coordinator between these parts, providing a technology infrastructure so Alice and Bob can meet and choose an oracle with a high reputation. It involves overcoming challenges cited in the Discreet Log Contracts Whitepaper: “Decentralized Matching“ or Decentralized Pairing.
 
-<!-- TODO: Write section 3.2.1 -->
 #### 3.2.1 Decentralized Pairing
 
 NITI uses decentralized communication protocols, such as Nostr, to facilitate the pairing between parties interested in creating a DLC contract (Alice and Bob) and the oracle that will provide the external data necessary for the execution of the contract.
